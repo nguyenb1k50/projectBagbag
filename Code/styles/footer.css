@@ -1,0 +1,108 @@
+.bg3 {
+    background-color: #222;
+}
+.p-b-32, .p-tb-32, .p-all-32 {
+    padding-bottom: 32px;
+}
+.p-t-75, .p-tb-75, .p-all-75 {
+    padding-top: 75px;
+}
+.Categories{
+    color: white;
+    font-weight: 500px;
+}
+.help{
+    color: white;
+    font-weight: 500px;
+}
+.abc{
+    text-align: center;
+    text-shadow: 100px;
+    color: white;
+}
+.getittouch{
+    color: white;
+    font-weight: 200px;
+}
+.xyz{
+    color: white;
+}
+.hcm2{
+    color: white;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+*, *:before, *:after {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+user agent stylesheet
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+body, html {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #666666;
+    height: 100%;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+body, html {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #666666;
+    height: 100%;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+*, *:before, *:after {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}

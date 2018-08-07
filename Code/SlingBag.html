@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SlingBag</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Wish shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet" type="text/css">
+	<link href="plugins/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/Bag.css">
+	<link rel="stylesheet" type="text/css" href="styles/bag_responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Do+Hyeon|Lobster" rel="stylesheet">
+	<link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo">
+					<a href="#">Wish</a>
+				</div>
+				<nav class="main_nav">
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="#">CATEGORIES
+								<span>
+									<i class="fas fa-caret-down"></i>
+								</span>
+							</a>
+							<div class="list-group">
+								<a href="Bags.html" class="list-group-item">BAGS</a>
+								<a href="SlingBag.html" class="list-group-item">SLING BAGS</a>
+								<a href="Backpacks.html" class="list-group-item">BACKPACKS</a>
+								<a href="ShoulderBag.html" class="list-group-item">SHOULDER BAGS</a>
+							</div>
+						</li>
+						<li>
+							<a href="man.html">MAN</a>
+						</li>
+						<li>
+							<a href="woman.html">WOMEN</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT US</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header_content ml-auto">
+					<div class="search header_search">
+						<form action="#">
+							<input type="search" class="search_input" required="required">
+							<button type="submit" id="search_button" class="search_button">
+								<img src="images/magnifying-glass.svg" alt="">
+							</button>
+						</form>
+					</div>
+					<div class="shopping">
+						<!-- Cart -->
+						<a href="#">
+							<div class="cart">
+								<img src="images/shopping-bag.svg" alt="">
+								<!-- <div class="cart_num_container">
+								<div class="cart_num_inner">
+									<div class="cart_num">1</div>
+								</div>
+							</div> -->
+							</div>
+						</a>
+						<!-- Star -->
+						<a href="#">
+							<div class="star">
+								<img src="images/star.svg" alt="">
+								<!-- <div class="star_num_container">
+								<div class="star_num_inner">
+									<div class="star_num">0</div>
+								</div>
+							</div> -->
+							</div>
+						</a>
+						<!-- Avatar -->
+						<a href="#">
+							<div class="avatar">
+								<img src="images/avatar.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo menu_mm">
+				<a href="#">Wish</a>
+			</div>
+			<div class="search">
+				<form action="#">
+					<input type="search" class="search_input menu_mm" required="required">
+					<button type="submit" id="search_button_menu" class="search_button menu_mm">
+						<img class="menu_mm" src="images/magnifying-glass.svg" alt="">
+					</button>
+				</form>
+			</div>
+			<nav class="menu_nav">
+				<ul class="menu_mm">
+					<li class="menu_mm">
+						<a href="#">home</a>
+					</li>
+					<li class="menu_mm">
+						<a href="#">clothes</a>
+					</li>
+					<li class="menu_mm">
+						<a href="#">accessories</a>
+					</li>
+					<li class="menu_mm">
+						<a href="#">lingerie</a>
+					</li>
+					<li class="menu_mm">
+						<a href="#">contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Home -->
+
+		<div class="home">
+			<div class="home_background" style="background: url('images/Homebag/backpack-bag-eyeglasses-265683.jpg');background-size: cover;background-attachment: fixed;"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_container">
+							<div class="home_content">
+								<div class="home_title">Man</div>
+								<div class="breadcrumbs">
+									<ul>
+										<li>
+											<a href="index.html">Home</a>
+										</li>
+										<li>Woman</li>
+										<li>Accessories</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Products -->
+
+		<div class="products">
+			<div class="container">
+				<div class="row">
+
+					<div class="current_page">Woman's Fashion</div>
+				</div>
+				<div class="col-12">
+					<div class="product_sorting clearfix">
+						<div class="view">
+							<div class="view_box box_view">
+								<i class="fa fa-th-large" aria-hidden="true"></i>
+							</div>
+							<div class="view_box detail_view">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="sorting">
+							<ul class="item_sorting">
+								<li>
+									<span class="sorting_text">Show all</span>
+									<i class="fa fa-caret-down" aria-hidden="true"></i>
+									<ul>
+										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'>
+											<span>Show All</span>
+										</li>
+										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>
+											<span>Price</span>
+										</li>
+										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "stars" }'>
+											<span>Stars</span>
+										</li>
+									</ul>
+								</li>
+								<!-- <li>
+									<span class="sorting_text">Show</span>
+									<span class="num_sorting_text">8</span>
+									<i class="fa fa-caret-down" aria-hidden="true"></i>
+									<ul>
+										<li class="num_sorting_btn"><span>3</span></li>
+										<li class="num_sorting_btn"><span>8</span></li>
+										<li class="num_sorting_btn"><span>12</span></li>
+										
+									</ul>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="title">
+				<p class="happening">MAN
+					<span></span>
+				</p>
+				<p>WOMAN
+					<span></span>
+				</p>
+			</div>
+			<div class="container">
+				<div class="overproducts">
+
+					<div class="row products_container1 opa">
+						<div class="container">
+							<div class="col">
+
+								<!-- Products -->
+
+								<div class="product_grid">
+									<!-- <div class="maninfo" style="position: relative;top: 26%"> -->
+										<button type="button" class="btn btn-outline-dark">Info</button>
+										<button type="button" class="btn btn-outline-dark">Info</button>
+										<button type="button" class="btn btn-outline-dark">Info</button>
+										<button type="button" class="btn btn-outline-dark">Info</button>
+										<button type="button" class="btn btn-outline-dark" style="margin-top: 600px">Info</button>
+										<button type="button" class="btn btn-outline-dark" style="margin-top: 600px">Info</button>
+									<!-- </div> -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro">
+												<p>Under the creative direction of Jonathan Anderson, the Spanish fashion house Loewe continues to bring a fresh and contemporary approach to every piece focusing on unconventional and intricate details.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Man/slingbag 1/Loewe-Puzzle sling bag-1.jpg" alt="">
+										</div>
+
+										<div class="rating rating_4" data-rating="4">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">LOEWE Puzzle Sling Bag</a>
+												</div>
+												<div class="product_price">$1,006</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro">
+												<p>Nothing screams modern, edgy and chic more than Marcelo Burlon.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Polyester 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Man/slingbag 2/MarceloBurlonCountyOfMilan-Dogo belt bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">MARCELO BURLON COUNTY OF MILAN Dogo Belt Bag</a>
+												</div>
+												<div class="product_price">$201</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro">
+												<p>ounded in 1913 by Mario Prada, the brand is known for producing timeless items with traditional Milanese craftsmanship.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Calf Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Man/slingbag 3/Prada-comic print belt bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">PRADA Comic Print Belt Bag</a>
+												</div>
+												<div class="product_price">$1,811</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro">
+												<p>Multicoloured leather colour block leaf print belt bag from Ports V featuring a main internal compartment, a two way zip fastening, an internal logo patch, a front zip pocket, a panelled colour block design, an adjustable fit and a leaf print.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Leather 100%, Outer Polyester 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Man/slingbag 4/PortsV-colour block leaf print belt bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">PORTS V Colour Block Leaf Print Belt Bag</a>
+												</div>
+												<div class="product_price">$150</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3" id="space">
+										<div class="product_image">
+											<div class="contentpro">
+												<p>Black cotton-blend glitter belt bag from Saint Laurent featuring a rectangular body, an all around zip fastening, a front centre logo stamp, silver-tone hardware, glitter details, an internal logo patch, a back zip pocket and a buckle fastening.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Cotton 30%, Polyurethane 70%</p>
+											</div>
+											<img src="images/Homebag/Product/Man/slingbag 5/SaintLaurent-glitter belt bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">SAINT LAURENT Glitter Belt Bag</a>
+												</div>
+												<div class="product_price">$646</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro">
+												<p>Aiming for the stars, the Derry belt bag comes in a sizeable navy blue cotton body with calf leather finishing, spacious enough for your essentials and more.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Lining Cotton 100%, Outer Calf Leather 70%, Brass 25%</p>
+											</div>
+											<img src="images/Homebag/Product/Man/slingbag 6/JimmyChoo-Derry belt bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">JIMMY CHOO Derry Belt Bag</a>
+												</div>
+												<div class="product_price">$1,080</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+
+
+								</div>
+								<!-- div cua product_grid1 -->
+
+							</div>
+							<!-- div cua col -->
+						</div>
+						<!-- div của container -->
+					</div>
+					<!-- div cua row products_container 1-->
+
+					<div class="row products_container2">
+						<div class="container">
+							<div class="col">
+
+								<!-- Products -->
+
+								<div class="product_grid">
+									<div class="womaninfo" style="position: relative;top: 26%">
+										<button type="button" class="btn btn-info">Info</button>
+										<button type="button" class="btn btn-info">Info</button>
+										<button type="button" class="btn btn-info">Info</button>
+										<button type="button" class="btn btn-info">Info</button>
+										<button type="button" class="btn btn-info" style="margin-top: 600px">Info</button>
+										<button type="button" class="btn btn-info" style="margin-top: 600px">Info</button>
+									</div>
+
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro1">
+												<p>Passing the day-to-night transition test with flying colours, this new The Vintage Side Sling from Marc Jacobs is a must-have accessory for the new season.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Woman/slingbag 1/MarcJacobs-The Vintage Side Sling crossbody bag-1.jpg" alt="">
+
+										</div>
+
+										<div class="rating rating_4" data-rating="4">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">MARC JACOBS The Vintage Side Sling Crossbody Bag</a>
+												</div>
+												<div class="product_price">$318</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro1">
+												<p>Black calf leather Lia Sling crossbody bag from Alexander Wang featuring a foldover top with magnetic closure, silver-tone stud detailing, a shoulder strap and an internal zipped pocket.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Calf Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Woman/slingbag 2/AlexanderWang-Lia Sling crossbody bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">ALEXANDER WANG Lia Sling Crossbody Bag</a>
+												</div>
+												<div class="product_price">$784</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro1">
+												<p>Marc Jacobs new 'The Sling' shoulder bag takes its cue from a classic wardrobe staple: the moto jacket.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Woman/slingbag 3/MarcJacobs-The Sling shoulder bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">MARC JACOBS The Sling Shoulder Bag</a>
+												</div>
+												<div class="product_price">$581</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro1">
+												<p>Under the creative direction of Jonathan Anderson, the spanish fashion house Loewe continues to bring a fresh and contemporary approach to every piece focusing on unconventional and intricate details.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Woman/slingbag 4/Loewe-Sling shoulder bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">LOEWE Sling Shoulder Bag</a>
+												</div>
+												<div class="product_price">$2,958</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro1">
+												<p>Auburn orange calf leather Sling shoulder bag from The Row featuring a shoulder strap, a two way zip fastening, an internal logo and calf leather trims.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Polyamide-8 98%, Calf Leather 100%, Polyurethane 2%</p>
+											</div>
+											<img src="images/Homebag/Product/Woman/slingbag 5/TheRow-Sling shoulder bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">THE ROW Sling Shoulder Bag</a>
+												</div>
+												<div class="product_price">$1,154</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Product -->
+									<div class="product col-sm-3">
+										<div class="product_image">
+											<div class="contentpro1">
+												<p>Purple leather Cylinder Sling cross-body bag from Building Block.</p>
+												<p>Made in Italy</p>
+												<p>Composition: Leather 100%</p>
+											</div>
+											<img src="images/Homebag/Product/Woman/slingbag 6/BuildingBlock-Cylinder Sling cross-body bag-1.jpg" alt="">
+
+										</div>
+
+										<!-- </div> -->
+										<div class="rating rating_5" data-rating="5">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product_content clearfix">
+											<div class="product_info">
+												<div class="product_name">
+													<a href="product.html">BUILDING BLOCK Cylinder Sling Cross-Body Bag</a>
+												</div>
+												<div class="product_price">$397</div>
+											</div>
+											<div class="product_options">
+												<div class="product_buy product_option">
+													<img src="images/shopping-bag-white.svg" alt="">
+												</div>
+												<div class="product_fav product_option">+</div>
+											</div>
+										</div>
+									</div>
+									<!-- Product -->
+
+
+								</div>
+								<!-- div cua product_grid1 -->
+
+							</div>
+							<!-- div cua col -->
+						</div>
+						<!-- div của container -->
+					</div>
+					<!-- div cua row products_container 2-->
+				</div>
+			</div>
+		</div>
+		<!-- div cua product -->
+
+		<!-- Footer -->
+		<br>
+		<footer class="bg3 p-t-75 p-b-32">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h3 class="Categories">
+							Categories
+						</h3>
+						<br>
+						<ul>
+							<li class="p-b-10">
+								<a href="Bags.html" class="stext-107 cl7 hov-cl1 trans-04">
+									Bags
+								</a>
+							</li>
+
+							<li class="p-b-10">
+								<a href="SlingBag.html" class="stext-107 cl7 hov-cl1 trans-04">
+									Sling Bags
+								</a>
+							</li>
+
+							<li class="p-b-10">
+								<a href="Backpacks.html" class="stext-107 cl7 hov-cl1 trans-04">
+									Backpacks
+								</a>
+							</li>
+
+							<li class="p-b-10">
+								<a href="ShoulderBag.html" class="stext-107 cl7 hov-cl1 trans-04">
+									Shoulder Bags
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 col-lg-2 p-b-50">
+						<h3 class="help">
+							Connect
+						</h3>
+						<br>
+						<ul>
+							<li class="p-b-10">
+								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+									<img src="http://www.smei-vn.org/images/stories/social/facebook.png" height="18px" width="18px" alt=""> Facebook
+								</a>
+							</li>
+
+							<li class="p-b-10">
+								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+									<img src="http://www.smei-vn.org/images/stories/social/g+.png" height="18px" width="18px" alt=""> Google+
+								</a>
+							</li>
+
+							<li class="p-b-10">
+								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+									<img src="http://www.smei-vn.org/images/stories/social/twitter.png" height="18px" width="18px" alt=""> Twitter
+								</a>
+							</li>
+
+							<li class="p-b-10">
+								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+									<img src="http://www.smei-vn.org/images/stories/social/linkedin.png" height="18px" width="18px" alt=""> Linkedin
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 col-lg-4 p-b-50">
+						<h3 class="getittouch">
+							Get in touch
+						</h3>
+						<br>
+						<p class="hcm2">
+							Any questions? Let us know in store at 590 Cach Mang Thang 8 Street, Ward 11, District 3, Ho Chi Minh City or call us on
+							+84 97777 8936
+						</p>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h3 class="xyz" id="idletter">
+							Newsletter
+						</h3>
+						<br>
+						<form id="frmLetter">
+							<div class="wrap-input1 w-full p-b-4">
+								<input class="input1 bg-none plh1 stext-107 cl7" type="email" name="email">
+								<div class="focus-input1 trans-04"></div>
+							</div>
+							<br>
+							<div class="p-t-18">
+								<button type="submit" class="btn btn-info">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<br>
+				<p class="abc">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright ©
+					<script>
+						document.write(new Date().getFullYear());
+					</script> All rights reserved | This template is made with
+					<i class="fa fa-heart-o" aria-hidden="true"></i> by
+					<a href="http://aptech.fpt.edu.vn/" target="_blank">FPT Aptech</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+				</p>
+			</div>
+	</div>
+	</footer>
+	</div>
+	<script>
+		document.getElementById('frmLetter').onsubmit = function () {
+			var outputHTML = "";
+			outputHTML += "<span> Thank you! I'll be in touch with you soon</span>";
+			var bien1 = $("#idletter");
+			bien1.html(outputHTML);
+			return false;
+		}
+	</script>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+	<script src="plugins/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="js/categories_custom.js"></script>
+	<!-- <script src="js/productanimate.js"></script> -->
+	<!-- <script src="js/animate.js"></script> -->
+	<script src="js/animate2.js"></script>
+</body>
+
+</html>
